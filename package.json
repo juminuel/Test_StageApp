@@ -1,0 +1,22 @@
+{
+  "name": "test_stageapp",
+  "version": "1.0.0",
+  "description": "test_project learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juminuel/Test_StageApp.git"
+  },
+  "author": "emmanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juminuel/Test_StageApp/issues"
+  },
+  "homepage": "https://github.com/juminuel/Test_StageApp#readme",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
