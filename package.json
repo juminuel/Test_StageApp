@@ -2,9 +2,11 @@
   "name": "test_stageapp",
   "version": "1.0.0",
   "description": "test_project learning",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -L app.ts --delay 3"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,11 @@
   "homepage": "https://github.com/juminuel/Test_StageApp#readme",
   "dependencies": {
     "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
