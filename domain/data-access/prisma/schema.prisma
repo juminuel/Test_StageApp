@@ -64,11 +64,3 @@ model User {
   lecturer  Lecturer?
   student   Student?
 }
-
-
-
-
-
-
-
-
