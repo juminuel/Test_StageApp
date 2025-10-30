@@ -60,7 +60,13 @@ model User {
   lastName  String
   email     String    @unique
   password  String
-  role      String
   lecturer  Lecturer?
   student   Student?
+  roleId Int
+  role Role @relation(fields: [roleId],references: [id])
+}
+model Role {
+  id Int @id @default(autoincrement())
+  name String @unique
+  users User[]
 }
