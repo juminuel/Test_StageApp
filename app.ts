@@ -3,7 +3,8 @@ import * as dotenv from 'dotenv';
 import { expressjwt } from 'express-jwt';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import { courseRouter } from './controller/course.router';
+import { courseRouter } from './controller/course.routes';
+import { userRouter } from './controller/user.routes';
 import swaggerJSDoc from'swagger-jsdoc' ;
 import swaggerUi from 'swagger-ui-express';
 
@@ -12,6 +13,7 @@ const port = 3000;
 
 
 dotenv.config();
+
 app.use(
     expressjwt({
         secret: process.env.JWT_SECRET || 'default_secret',
@@ -21,10 +23,12 @@ app.use(
     })
 );
 
+
 app.use(cors({ origin: 'http://localhost:8080' }));
 app.use(bodyParser.json());
 
 app.use('/courses',courseRouter);
+app.use('/users',userRouter)
 app.get('/status', (req, res) => {
     res.json({ message: 'Courses API is running...' });
 });

@@ -2,7 +2,6 @@
   "name": "test_stageapp",
   "version": "1.0.0",
   "description": "test_project learning",
-  "type": "module",
   "main": "app.ts",
   "prisma": {
     "schema": "domain/data-access/prisma/schema.prisma"

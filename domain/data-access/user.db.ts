@@ -71,5 +71,5 @@ const createUser = async(user: User): Promise<User> => {
     }
 }
 export default {
-    getAllUsers, getUserById, createUser
+    getAllUsers, getUserById, createUser, getUserByUserName,
 }
